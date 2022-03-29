@@ -7,7 +7,7 @@ function Photos () {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src={require("../mrrobot.jpg")}
+                src={require("../immagini/Panoramica1.jpg")}
                 alt="First slide"
                 />
                 <Carousel.Caption>
@@ -18,7 +18,7 @@ function Photos () {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src={require("../mrrobot.jpg")}
+                src={require("../immagini/ice.jpg")}
                 alt="Second slide"
                 />
                 <Carousel.Caption>
@@ -29,7 +29,7 @@ function Photos () {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src={require("../mrrobot.jpg")}
+                src={require("../immagini/roccia.jpg")}
                 alt="Third slide"
                 />
                 <Carousel.Caption>

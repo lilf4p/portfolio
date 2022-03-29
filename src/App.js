@@ -1,14 +1,12 @@
 import './App.css'
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
+import { Container, Button, Alert } from 'react-bootstrap';
 import Navbar2 from './components/navbar2';
-import { Container, Button } from 'react-bootstrap';
 import Coding from './components/coding';
 import Study from './components/study';
 import Photos from './components/photos';
-import { Alert } from 'react-bootstrap';
 import axios from 'axios';
-//import Coding from './components/coding';
 
 function App() {
   const repos = () => axios.get('https://api.github.com/users/lilf4p/repos')
@@ -30,7 +28,7 @@ function App() {
         </p>
       </Alert>
 
-      <Container fluid className='App-content'>
+      <Container fluid='true' className='App-content'>
           <Photos />
           <Coding />
           <Study />

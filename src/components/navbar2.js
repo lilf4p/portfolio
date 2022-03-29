@@ -6,7 +6,7 @@ const ScrollLink = Scroll.ScrollLink;
 
 function Navbar2() {
     return (
-      <Navbar bg='dark' variant='dark' fluid sticky='top'>
+      <Navbar bg='dark' variant='dark' fluid="true" sticky='top'>
             <Container fluid>
               <Navbar.Brand href='#home'>lilf4p</Navbar.Brand>
               <Nav className="me-auto">

@@ -7,7 +7,7 @@ function Coding () {
             {Array.from({ length: 6 }).map((_, idx) => (
                 <Col>
                     <Card text="dark">
-                        <Card.Img variant="top" src={require("../mrrobot.jpg")} />
+                        <Card.Img variant="top" src={require("../immagini/mrrobot.jpg")} />
                         <Card.Body>
                             <Card.Title>Card title</Card.Title>
                             <Card.Text>
