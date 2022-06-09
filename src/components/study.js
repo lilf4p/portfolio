@@ -11,14 +11,14 @@ function Study () {
                 <Card.Title>Studies</Card.Title>
                 <Card.Text>
                     Computer Science Degree
-                    <ProgressBar now={now1} label={`${now1}%`} />
                 </Card.Text>
+                <ProgressBar now={now1} label={`${now1}%`} />
                 <Card.Text as="h5">25 Marzo 2022 University of Pisa</Card.Text>
                 <hr/>
                 <Card.Text>
                     Master of Computer Science Degree
-                    <ProgressBar now={now2} label={`${now2}%`} />
                 </Card.Text>
+                <ProgressBar now={now2} label={`${now2}%`} />
                 <Card.Text as="h5">University of Pisa</Card.Text>
                 <hr/>
             </Card.ImgOverlay>

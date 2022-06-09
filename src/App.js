@@ -6,16 +6,13 @@ import Navbar2 from './components/navbar2';
 import Coding from './components/coding';
 import Study from './components/study';
 import Photos from './components/photos';
-import axios from 'axios';
 import Social from './components/social';
 
 function App() {
-  const repos = () => axios.get('https://api.github.com/users/lilf4p/repos')
-    .then(function(response) {
-    console.log(response.data)
-  })
+
   return (
     <>
+      {/* JSX comment*/}     
       <Navbar2 />
 
       <Alert variant="dark">
@@ -36,12 +33,6 @@ function App() {
           <Social />
       </Container>
 
-      <Button 
-      
-      onClick={repos}
-      >
-        List Repos
-      </Button>
     </>
   );
 
