@@ -73,13 +73,13 @@ function Coding () {
                 clicking on the button below. The list is in continuos update!
             </Typography>
             <hr className="hr"/>
-            <Row xs={2} md={4} className="g-5">
+            <Row xs={2} md={4} className="g-4">
                 {Array.from({length: length}).map((_, idx) => (
                     <Col>
-                        <Card style={{ display: 'flex' }} text="light" border="light" bg="dark">
+                        <Card style={{ height: '10rem', display: 'flex' }} text="light" border="light" bg="dark">
                             <Card.Body>
                                 <Card.Title>
-                                    {cards && cards[idx].name}
+                                    <div className="CardTitle">{cards && cards[idx].name}</div>
                                 </Card.Title>
                                 <Card.Text>
                                     Language: {cards && cards[idx].language}

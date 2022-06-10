@@ -160,3 +160,14 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.MyCard {
+  min-height: 10px;
+  
+  display: flex;
+}
+
+.CardTitle {
+  font-size: medium;
+  font-weight: 700;
+}

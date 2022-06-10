@@ -2,8 +2,6 @@ import React from 'react';
 import { Button,Container,Nav,Image,Navbar } from 'react-bootstrap';
 import Scroll from 'react-scroll';
 
-const ScrollLink = Scroll.ScrollLink;
-
 function Navbar2() {
     return (
       <Navbar bg='dark' variant='dark' fluid="true" sticky='top'>
