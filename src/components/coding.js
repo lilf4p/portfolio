@@ -20,26 +20,38 @@ const list_repos = myPromise.then(function(response) {
 function Coding () {
 
     //Stato della lista delle repository
-    const [cards, setCards] = useState([{}]);
-
+    const [cards, setCards] = useState(null);
+    
     //Funzione che setta i dati della lista delle repository
-    const setData =  ([{name,language,html_url}]) => {
-        setCards([ {name,language,html_url} ]);
-    }
+    //const setData =  (result) => {
+    //    setCards(result);
+        //setCards([...cards, card]);
+    //}
 
-    const addData =  ({name,language,html_url}) => {
-        setCards([...cards, {name,language,html_url} ]);
-    }
+    //const addData =  ({name,language,html_url}) => {
+    //    setCards([...cards, {name,language,html_url} ]);
+    //}  
 
     //Fetch della lista delle repository dalla api di github
     useEffect(() => {
+        
         fetch('https://api.github.com/users/lilf4p/repos')
             .then(response => response.json())
             .then(data => {
                 console.log(data);
-                setData(data);
+                const result = data.map(({ name,language,html_url }) => ({
+                    name,
+                    language,
+                    html_url
+                  }));
+                
+                //console.log(result);
+                //setData(result);
+                setCards(result);
+                
                 
             });
+
     }, []);
 
     console.log(cards);
@@ -54,15 +66,15 @@ function Coding () {
                             <Card.Img variant="top" src={require("../immagini/mrrobot.jpg")} />
                             <Card.Body>
                                 <Card.Title>
-                                    {cards[0].name}
+                                    {cards && cards[idx].name}
                                 </Card.Title>
                                 <Card.Text>
-                                    {cards[0].language}
+                                    {cards && cards[idx].language}
                                 </Card.Text>
                             </Card.Body>
                             <Button size="sm" 
                                     variant="dark" 
-                                    href= {cards[0].html_url}                                  
+                                    href= {cards && cards[idx].html_url}                            
                                 >View on Github
                             </Button>
                         </Card>
