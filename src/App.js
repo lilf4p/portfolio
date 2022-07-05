@@ -14,19 +14,6 @@ function App() {
   return (
     <>
       <Navbar2 />
-      
-      
-      <Alert variant="dark">
-      <Alert.Heading>Hey, nice to see you!</Alert.Heading>
-        <p>
-          Currently the website is under development, we'll keep you update on the last news.
-        </p>
-        <hr />
-        <p className="mb-0">
-          Hope to see you soon!
-        </p>
-      </Alert>
-    
 
       <Container fluid='true' className='App-content'>
           {/* <Photos /> */}

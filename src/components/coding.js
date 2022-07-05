@@ -51,6 +51,12 @@ function Coding () {
                     html_url
                   }));
                 
+                for (let i = 0; i < result.length; i++ ) {
+                    if (result[i].name === "lilf4p") {
+                        result.splice(i, 1);
+                    }
+                }
+
                 //console.log(result);
                 //setData(result);
                 setCards(result);
