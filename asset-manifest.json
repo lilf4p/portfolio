@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-app/static/css/main.61f44fbe.css",
-    "main.js": "/my-app/static/js/main.112fb775.js",
+    "main.js": "/my-app/static/js/main.cbb82cc9.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/roccia.png": "/my-app/static/media/roccia.2c46caed44ae681ffdd6.png",
     "static/media/laureasfondo.png": "/my-app/static/media/laureasfondo.74771a7ca9de66667029.png",
@@ -44,11 +44,11 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/my-app/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/my-app/index.html",
     "main.61f44fbe.css.map": "/my-app/static/css/main.61f44fbe.css.map",
-    "main.112fb775.js.map": "/my-app/static/js/main.112fb775.js.map",
+    "main.cbb82cc9.js.map": "/my-app/static/js/main.cbb82cc9.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.61f44fbe.css",
-    "static/js/main.112fb775.js"
+    "static/js/main.cbb82cc9.js"
   ]
 }
