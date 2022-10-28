@@ -9,13 +9,13 @@ function About () {
             <div className="Avatar">
                 <img className="ImageAvatar" src={require("../immagini/avatar.png")} alt="Avatar" />
             </div>
-            <hr className="hr"/>
+            
             <Typewriter  options={{
                 strings: ['Hey, I\'m lilf4p'],
                 autoStart: true,
                 loop: true,
             }} />
-            <hr className="hr"/>
+            
             <div className="Title">
                 Developer and Student of Master in Computer Science 
             </div>

@@ -4,7 +4,7 @@ import Scroll from 'react-scroll';
 
 function Navbar2() {
     return (
-      <Navbar bg='dark' variant='dark' fluid="true" sticky='top'>
+      <Navbar  variant='dark' fluid="true" sticky='top'>
             <Container fluid>
               <Navbar.Brand href='#home'>lilf4p</Navbar.Brand>
               <Nav className="me-auto">

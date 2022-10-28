@@ -7,7 +7,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 function Social () {
     return (
         <Container fluid="true" id="social" className="Social">
-            <hr />
+            <hr className="hr"/>
             <h6>Find me on social media!</h6>
             <IconButton aria-label="github" href="https://github.com/lilf4p">
                 <GitHubIcon fontSize="large"/>

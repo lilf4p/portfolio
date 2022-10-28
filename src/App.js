@@ -15,7 +15,7 @@ function App() {
     <>
       <Navbar2 />
 
-      <Container fluid='true' className='App-content'>
+      <Container fluid='true' className='slider-thumb'>
           {/* <Photos /> */}
           <About />
           <Coding />
