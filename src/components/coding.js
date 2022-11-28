@@ -45,16 +45,18 @@ function Coding () {
             .then(response => response.json())
             .then(data => {
                 console.log(data);
-                const result = data.map(({ name,language,html_url }) => ({
+                const result = data.map(({ name,language,html_url,description}) => ({
                     name,
                     language,
-                    html_url
+                    html_url,
+                    description
                   }));
                 
                 for (let i = 0; i < result.length; i++ ) {
                     if (result[i].name === "lilf4p") {
                         result.splice(i, 1);
                     }
+                    
                 }
 
                 //console.log(result);
@@ -79,16 +81,23 @@ function Coding () {
                 clicking on the button below. The list is in continuos update!
             </Typography>
             <hr className="hr"/>
-            <Row xs={2} md={4} className="g-4">
+            <Row xs={1} md={3} className="g-5">
                 {Array.from({length: length}).map((_, idx) => (
                     <Col>
-                        <Card style={{ height: '10rem', display: 'flex' }} text="light" border="light" bg="dark">
+                        <Card style={{ height: '13rem', display: 'flex' }} text="light" border="light" bg="dark">
                             <Card.Body>
                                 <Card.Title>
                                     <div className="CardTitle">{cards && cards[idx].name}</div>
                                 </Card.Title>
-                                <Card.Text>
+                                <Card.Subtitle>
                                     Language: {cards && cards[idx].language}
+                                    {cards && cards[idx].language === null ? "Not specified" : ""}
+                                </Card.Subtitle>
+                                <Card.Text>
+                                    {
+                                       // check if description is more than 100 characters and if it is, cut it and add ...
+                                        cards && cards[idx].description && cards[idx].description.length > 100 ? cards[idx].description.substring(0,100) + "..." : cards && cards[idx].description
+                                    }    
                                 </Card.Text>
                             </Card.Body>
                             <Button size="sm" 

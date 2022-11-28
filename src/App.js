@@ -12,18 +12,14 @@ import About from './components/about';
 function App() {
 
   return (
-    <>
-      <Navbar2 />
-
-      <Container fluid='true' className='slider-thumb'>
+      <Container className='App' fluid='true'>
           {/* <Photos /> */}
+          <Navbar2 />
           <About />
           <Coding />
           <Study />
           <Social />
       </Container>
-
-    </>
   );
 
 }

@@ -1,5 +1,5 @@
 .App {
-  background-color: #282c34;
+  background-color: #242525;
   min-height: 100vh;
   text-align: center;
   display: flex;
@@ -88,7 +88,7 @@
 }
 
 .About {
-  
+  background-color: #242525;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 20px;
@@ -96,7 +96,6 @@
 }
 
 .Photos {
-  background-color: #282c34;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 50px;
@@ -106,7 +105,7 @@
 
 .hr {
   clear: both;
-  background: linear-gradient(90deg,#0da3e4,#d563ec);
+  background: linear-gradient(90deg,#242525,#9d9b9e);
 }
 
 .Waterfall {
@@ -120,11 +119,13 @@
   height: 150px;
   width: 150px;
   border-radius: 50%;
+  background-color: lightsteelblue;
 }
 
 .ImageAvatar {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 15%;
   height: 130px;
   width: 130px;
 }
@@ -171,36 +172,21 @@
   font-weight: 700;
 }
 
-body {
-  height: 100vh;
-  background: linear-gradient(90deg,#0da3e4,#d563ec);
-
-}
-
-.slider-thumb::before {
-  /*center content*/
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  font-size: calc(10px + 2vmin);
-  color: white;
-	position: absolute;
-	content: "";
+.Blob {
   margin-left: auto;
   margin-right: auto;
-	left: 38%;
-	top: 5%;
-	width: 350px;
-	height: 350px;
-	background: #17141d;
-	border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
-	will-change: border-radius, transform, opacity;
+  margin-bottom: 2%;
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  width: 250px;
+  height: 250px;
+  background: lightsteelblue;
+  will-change: border-radius, transform, opacity;
 	animation: sliderShape 5s linear infinite;
 	display: block;
 	z-index: -1;
 	-webkit-animation: sliderShape 5s linear infinite;
 }
+
 @keyframes sliderShape{
   0%,100%{
   border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;

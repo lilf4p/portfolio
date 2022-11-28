@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 function About () {
     return (
         <Container id = 'about' className="About">
-            <div className="Avatar">
+            <div className="Blob">
                 <img className="ImageAvatar" src={require("../immagini/avatar.png")} alt="Avatar" />
             </div>
             
