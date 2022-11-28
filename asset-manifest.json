@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.fcfb1ea1.css",
-    "main.js": "/my-app/static/js/main.92cf357f.js",
+    "main.css": "/my-app/static/css/main.f4629ef9.css",
+    "main.js": "/my-app/static/js/main.0e0c3f09.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/roccia.png": "/my-app/static/media/roccia.2c46caed44ae681ffdd6.png",
     "static/media/laureasfondo.png": "/my-app/static/media/laureasfondo.74771a7ca9de66667029.png",
@@ -43,12 +43,12 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/my-app/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/my-app/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/my-app/index.html",
-    "main.fcfb1ea1.css.map": "/my-app/static/css/main.fcfb1ea1.css.map",
-    "main.92cf357f.js.map": "/my-app/static/js/main.92cf357f.js.map",
+    "main.f4629ef9.css.map": "/my-app/static/css/main.f4629ef9.css.map",
+    "main.0e0c3f09.js.map": "/my-app/static/js/main.0e0c3f09.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcfb1ea1.css",
-    "static/js/main.92cf357f.js"
+    "static/css/main.f4629ef9.css",
+    "static/js/main.0e0c3f09.js"
   ]
 }
