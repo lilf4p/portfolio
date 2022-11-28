@@ -126,8 +126,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 15%;
-  height: 130px;
-  width: 130px;
+  height: 180px;
+  width: 160px;
 }
 
 .Welcome {
@@ -177,8 +177,8 @@
   margin-right: auto;
   margin-bottom: 2%;
   border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
-  width: 250px;
-  height: 250px;
+  width: 270px;
+  height: 270px;
   background: lightsteelblue;
   will-change: border-radius, transform, opacity;
 	animation: sliderShape 5s linear infinite;
