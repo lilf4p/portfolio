@@ -8,7 +8,7 @@ import wave2 from '../immagini/wave2.svg';
 
 function Social () {
     return (
-        <Container fluid="true" id="social" className="Social" style={{ background: `url(${wave2})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center bottom", minHeight: 500}}>
+        <div className="Social" >
                 <IconButton aria-label="github" href="https://github.com/lilf4p">
                     <GitHubIcon fontSize="large"/>
                 </IconButton>
@@ -21,7 +21,7 @@ function Social () {
                 <IconButton aria-label="linkedin" href="https://www.linkedin.com/in/leonardo-stoppani-45090923a/">
                     <LinkedInIcon fontSize="large" color="primary"/>
                 </IconButton>
-        </Container>
+        </div>
     );
 }
 

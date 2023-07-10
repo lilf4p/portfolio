@@ -73,6 +73,12 @@
   margin-top: 20px;
   font-size: x-small;
   color: white;
+  background-image: url("./immagini/wave2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  resize: cover;
 }
 
 .Coding {
@@ -137,13 +143,13 @@
 }
 
 .Title {
-  font-size: 5rem;
+  font-size: 3.5rem;
   line-height: 5rem;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  max-width: 70rem;
+  max-width: 50rem;
   margin-bottom: 1rem;
   font-weight: 700;
 }
