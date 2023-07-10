@@ -52,8 +52,13 @@ function Coding () {
                     description
                   }));
                 
-                for (let i = 0; i < result.length; i++ ) {
-                    if (result[i].name === "lilf4p") {
+                for (var i = 0; i < result.length; i++ ) {
+
+                    if (result[i].name === "lilf4p" || result[i].name === "aima-python") {
+                        result.splice(i, 1);
+                    }
+
+                    if (result[i].name === "cgc-scaleup3") {
                         result.splice(i, 1);
                     }
                     
@@ -75,16 +80,16 @@ function Coding () {
             <hr className="hr"/>
             <h1>Projects</h1>
             <hr className="hr"/>
-            <Typography align="center" variant="body1" gutterBottom>
+            <p className="Content" >
                 Here you can find all my projects. I have made a lot of projects, but not all of them are public.
                 They include some University projects, but also some personal. All of them can be found on my github by 
                 clicking on the button below. The list is in continuos update!
-            </Typography>
+            </p>
             <hr className="hr"/>
             <Row xs={1} md={3} className="g-5">
                 {Array.from({length: length}).map((_, idx) => (
                     <Col>
-                        <Card style={{ height: '13rem', display: 'flex' }} text="light" border="light" bg="dark">
+                        <Card style={{ height: '13rem', display: 'flex', borderColor:"palegreen"}} text="light" bg="dark">
                             <Card.Body>
                                 <Card.Title>
                                     <div className="CardTitle">{cards && cards[idx].name}</div>
@@ -102,7 +107,8 @@ function Coding () {
                             </Card.Body>
                             <Button size="sm" 
                                     variant="secondary" 
-                                    href= {cards && cards[idx].html_url}                            
+                                    href= {cards && cards[idx].html_url}
+                                    style={{ background:"palegreen", color:"black", fontWeight:"bold"}}                    
                                 >View on Github
                             </Button>
                         </Card>
