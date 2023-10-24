@@ -2,7 +2,7 @@
   "name": "lilf4p.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
+  "homepage": "https://lilf4p.github.io",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
