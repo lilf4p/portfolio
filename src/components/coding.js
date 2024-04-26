@@ -45,34 +45,43 @@ function Coding () {
             .then(response => response.json())
             .then(data => {
                 console.log(data);
-                const result = data.map(({ name,language,html_url,description}) => ({
+                const result = data.map(({ name,language,html_url,description,topics}) => ({
                     name,
                     language,
                     html_url,
-                    description
+                    description,
+                    topics
                   }));
+
+                var filtered = [];
                 
                 for (var i = 0; i < result.length; i++ ) {
 
-                    if (result[i].name === "lilf4p" || result[i].name === "aima-python") {
-                        result.splice(i, 1);
+                    //if (result[i].name === "lilf4p" || result[i].name === "aima-python") {
+                    //    result.splice(i, 1);
+                    //}
+
+                    //if (result[i].name === "cgc-scaleup3") {
+                    //    result.splice(i, 1);
+                    //}
+                   
+                    // keep only the repo that have the topic "portfolio"
+                    if (result[i].topics.includes("portfolio")) {
+                        filtered.push(result[i]);
                     }
 
-                    if (result[i].name === "cgc-scaleup3") {
-                        result.splice(i, 1);
-                    }
-                    
                 }
 
                 //console.log(result);
                 //setData(result);
-                setCards(result);
-                setLength(result.length);
+                setCards(filtered);
+                setLength(filtered.length);
                 
             });
 
     }, []);
 
+    console.log(length);
     console.log(cards);
 
     return (

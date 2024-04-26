@@ -27,7 +27,7 @@ function About () {
                      
 
                     <p className="Description">I am a 23 years old student with a Bachelor Degree in Computer Science from Unipi. Currently i am enrolled in Master of Artificial Intelligence at Unipi
-                    and I will attend next semester courses at University of Copenhagen!</p>
+                    and I have attended one semester at University of Copenhagen!</p>
                 </div>
             </div>
 

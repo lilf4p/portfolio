@@ -5,7 +5,6 @@ import { Container, Button, Alert } from 'react-bootstrap';
 import Navbar2 from './components/navbar2';
 import Coding from './components/coding';
 import Study from './components/study';
-import Photos from './components/photos';
 import Social from './components/social';
 import About from './components/about';
 
