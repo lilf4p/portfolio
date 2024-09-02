@@ -23,7 +23,13 @@ const list_repos = myPromise.then(function(response) {
 });
 */
 
+function isMobile() {
+    const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+    return regex.test(navigator.userAgent);
+}
+
 function Coding() {
+
     //Stato della lista delle repository
     const [cards, setCards] = useState(null);
     const [length, setLength] = useState(0);
@@ -40,7 +46,7 @@ function Coding() {
 
     //Fetch della lista delle repository dalla api di github
     useEffect(() => {
-        fetch("https://api.github.com/users/lilf4p/repos", {headers: {Authorization: token}})
+        fetch("https://api.github.com/users/lilf4p/repos", { headers: { Authorization: token } })
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);
@@ -90,7 +96,7 @@ function Coding() {
                             variant="secondary"
                             href={cards && cards[idx].html_url}
                             style={{
-                                boxShadow:"10"
+                                boxShadow: "10"
                             }}
                         >
                             <Card
@@ -99,8 +105,8 @@ function Coding() {
                                     height: "25rem",
                                     width: "fit-content",
                                     display: "flex",
-                                    boxShadow:"10",
-                                    maxWidth:"25rem",
+                                    boxShadow: "10",
+                                    maxWidth: "25rem",
                                 }}
                                 text="light"
                                 bg="secondary"

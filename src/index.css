@@ -6,8 +6,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #242525;
-    overflow-x: scroll;
-    background-size: cover;
+    overflow-x: clip;
+    background-size: 100%;
 }
 
 #preloader {
