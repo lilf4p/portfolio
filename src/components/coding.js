@@ -5,6 +5,7 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { Typography } from "@mui/material";
+import token from '../token';
 
 /*
 let get_repos = () => axios.get('https://api.github.com/users/lilf4p/repos')
@@ -39,7 +40,7 @@ function Coding() {
 
     //Fetch della lista delle repository dalla api di github
     useEffect(() => {
-        fetch("https://api.github.com/users/lilf4p/repos")
+        fetch("https://api.github.com/users/lilf4p/repos", {headers: {Authorization: token}})
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);

@@ -23,7 +23,7 @@ function Social() {
                     color: "white"
                 }} />
             </IconButton>
-            <IconButton aria-label="twitter" focusRipple="true" href="https://twitter.com/lilf4p" >
+            <IconButton aria-label="twitter" href="https://twitter.com/lilf4p" >
                 <TwitterIcon fontSize={fontsize} color='info' sx={{
                     '&:hover': {
                         color: "gray",
@@ -31,7 +31,7 @@ function Social() {
                     color: "white"
                 }} />
             </IconButton>
-            <IconButton aria-label="instagram" focusRipple="true" href="https://www.instagram.com/lilf4p/" >
+            <IconButton aria-label="instagram" href="https://www.instagram.com/lilf4p/" >
                 <InstagramIcon fontSize={fontsize} sx={{
                     '&:hover': {
                         color: "gray",
@@ -39,7 +39,7 @@ function Social() {
                     color: "white"
                 }}></InstagramIcon>
             </IconButton>
-            <IconButton aria-label="linkedin" focusRipple="true" href="https://www.linkedin.com/in/leonardo-stoppani-45090923a/" >
+            <IconButton aria-label="linkedin"href="https://www.linkedin.com/in/leonardo-stoppani-45090923a/" >
                 <LinkedInIcon fontSize={fontsize} sx={{
                     '&:hover': {
                         color: "gray",

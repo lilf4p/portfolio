@@ -66,7 +66,6 @@
     align-items: left;
     justify-content: left;
     font-size: calc(1px + 1.5vmin);
-    color: white;
 }
 
 .Social {
@@ -99,7 +98,6 @@
     margin-top: 5px;
     margin-bottom: 50px;
     font-size: medium;
-    color: white;
 }
 
 .hr {
