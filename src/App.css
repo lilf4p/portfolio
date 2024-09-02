@@ -119,13 +119,6 @@
 
 .Title {
     font-size: 3rem;
-
-    @media only screen and (max-width: 800px) {
-        font-size: 35px;
-        line-height: normal;
-        margin-top: 2rem;
-    }
-
     line-height: 5rem;
     text-align: left;
     max-width: 50rem;
@@ -133,19 +126,18 @@
     font-weight: 700;
     margin-top: 4rem;
     font-family: "Lucida Console",
-    Courier,
-    monospace;
+        Courier,
+        monospace;
+
+    @media only screen and (max-width: 800px) {
+        font-size: 35px;
+        line-height: normal;
+        margin-top: 2rem;
+    }
 }
 
 .Subtitle {
     font-size: 1.8rem;
-
-    @media only screen and (max-width: 800px) {
-        font-size: 22px;
-        line-height: normal;
-        margin-top: 2rem;
-    }
-
     text-align: left;
     max-width: 70rem;
     margin-bottom: 2rem;
@@ -153,15 +145,15 @@
     margin-left: auto;
     margin-right: auto;
     font-family: JetBrains Mono;
-}
 
-.Description {
     @media only screen and (max-width: 800px) {
-        font-size: 15px;
+        font-size: 22px;
         line-height: normal;
         margin-top: 2rem;
     }
+}
 
+.Description {
     font-size: 1.2rem;
     text-align: left;
     max-width: 60rem;
@@ -170,6 +162,12 @@
     margin-left: auto;
     margin-right: auto;
     line-height: 1.7rem;
+
+    @media only screen and (max-width: 800px) {
+        font-size: 15px;
+        line-height: normal;
+        margin-top: 2rem;
+    }
 }
 
 .Content {
