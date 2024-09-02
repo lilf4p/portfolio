@@ -10,7 +10,7 @@ import About from "./components/about";
 
 function App() {
     return (
-        <Container className="App" fluid="true">
+        <Container id = "home" className="App" fluid="true">
             {/* <Photos /> */}
             <Navbar2 />
             <About />

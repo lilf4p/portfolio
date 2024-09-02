@@ -4,11 +4,23 @@ import { Container } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import Social from "./social";
 
+function isMobile() {
+    const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+    return regex.test(navigator.userAgent);
+  }
+
 function About() {
     return (
-        <Container id="about" className="About" fluid="true">
+        <Container id="about" className="About" >
             <div className="Title">
-                Hi there, I'm Leonardo 👋
+                {isMobile() ?
+                <p>
+                <p>Hi there,</p>
+                <p>I'm Leonardo 👋</p>
+                </p>
+                :
+                <p>Hi there, I'm Leonardo 👋</p>
+                }
                 <Social />
                 <div className="Subtitle">
                     Follow my journey through AI and ML

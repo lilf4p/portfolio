@@ -82,17 +82,24 @@ function Coding() {
 
     return (
         <Container id="code" className="Coding" >
-            <Row xxs={1} xs={2} md={2} xl={3} className="g-5">
+            <Row xxs={1} xs={1} md={2} xl={3} className="g-5">
                 {Array.from({ length: length }).map((_, idx) => (
-                    <Col>
+                    <Col >
                         <Button
                             variant="secondary"
                             href={cards && cards[idx].html_url}
+                            style={{
+                                boxShadow:"10"
+                            }}
                         >
                             <Card
                                 style={{
+                                    boxSizing: "border-box",
                                     height: "25rem",
+                                    width: "fit-content",
                                     display: "flex",
+                                    boxShadow:"10",
+                                    maxWidth:"25rem",
                                 }}
                                 text="light"
                                 bg="secondary"
