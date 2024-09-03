@@ -51,26 +51,19 @@ function Coding() {
             .then((data) => {
                 console.log(data);
                 const result = data.map(
-                    ({ name, language, html_url, description, topics }) => ({
+                    ({ name, language, html_url, description, topics, default_branch }) => ({
                         name,
                         language,
                         html_url,
                         description,
                         topics,
+                        default_branch,
                     }),
                 );
 
                 var filtered = [];
 
                 for (var i = 0; i < result.length; i++) {
-                    //if (result[i].name === "lilf4p" || result[i].name === "aima-python") {
-                    //    result.splice(i, 1);
-                    //}
-
-                    //if (result[i].name === "cgc-scaleup3") {
-                    //    result.splice(i, 1);
-                    //}
-
                     // keep only the repo that have the topic "portfolio"
                     if (result[i].topics.includes("portfolio")) {
                         filtered.push(result[i]);
@@ -115,7 +108,7 @@ function Coding() {
                                 <Card.Img className="CardImg"
                                     src={
                                         cards[idx].html_url +
-                                        "/raw/main/images/portfolio.png"
+                                        "/raw/" + cards[idx].default_branch + "/images/portfolio.png"
                                     }
                                 />
                                 <Card.Body>
